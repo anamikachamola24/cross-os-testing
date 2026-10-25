@@ -1,0 +1,19 @@
+name: python_install
+on:
+        push:
+                branches:
+                - main
+jobs:             
+        python_install:
+                uses: actions/setup-python@v4
+                with:   
+                - python-version: '3.9'
+                steps:
+                - name: installation
+                  run : pip install pytest flake8;      
+                - name: python version
+                  run: python --version 
+                - name: flake chek 
+                  run:  flake8 --version
+                - name: Pytest check
+                  run:  pytest --version
