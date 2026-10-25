@@ -7,10 +7,11 @@ jobs:
         python_install:
                 runs-on : ubuntu-latest
                 steps:
-
-                - uses: actions/setup-python@v4
+                - uses: actions/checkout@v4
+                - name: Set up Python
+                  uses: actions/setup-python@v4
                   with:   
-                  python-version: '3.9'
+                    python-version: '3.9'
                 
                 - name: installation
                   run : pip install pytest flake8;      
