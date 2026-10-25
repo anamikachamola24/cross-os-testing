@@ -3,7 +3,7 @@ name: os-test
 on:
   push:
     branches:
-      - main
+      - devl
 
 jobs:
   linux-test:
