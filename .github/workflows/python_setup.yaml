@@ -2,7 +2,7 @@ name: python_install
 on:
         push:
                 branches:
-                - main
+                - devl
 jobs:             
         python_install:
                 runs-on : ubuntu-latest
